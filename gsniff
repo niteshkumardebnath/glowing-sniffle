@@ -7,8 +7,7 @@ while getopts ":f" opt; do #Trying to add a flag.
   for name; do
   dir=${name%/.git} #Removing the /.git from the results, it is kinda important.
   echo "Updating repo in directory: ${dir}"
-    (cd $dir #I would have probably just used the -C option, but I have other plans.
-     git pull)
+     (git -C "$dir" pull)
   done
 ' _ {} +
 	exit 0 #I figured that out. Haha.
@@ -22,8 +21,7 @@ done
     find $HOME -type d -name '.git' -exec sh -c '
   for name; do
   repo=${name%/.git}
-  echo Updating repo: ${repo##*/}
-    (cd $repo
-     git pull)
+  echo Updating repo: ${repo##*/} #Only shows the repo name.
+    (git "$repo" pull)
   done
 ' _ {} +
