@@ -9,7 +9,7 @@ I wanted to do something bigger with that, but I abandoned it, since I already f
 ## Use cases
 DO NOT. ANY USAGE OF THIS SCRIPT CAN BREAK YOUR WORKFOW, AND RESULT IN LOSS OF YOUR PROJECTS. Consider editing this script to suit your needs.
 
-It has a very specific use case but refer to [2nd topic](#Why?).
+It has a very specific use case but refer to [2nd topic](#why).
 
 ## Usage
 Download from [Releases](https://github.com/niteshkumardebnath/glowing-sniffle/releases).
