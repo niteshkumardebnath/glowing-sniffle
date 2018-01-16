@@ -22,6 +22,6 @@ done
   for name; do
   repo=${name%/.git}
   echo Updating repo: ${repo##*/} #Only shows the repo name.
-    (git "$repo" pull)
+    (git -C "$repo" pull)
   done
 ' _ {} +
