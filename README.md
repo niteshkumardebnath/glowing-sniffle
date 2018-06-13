@@ -1,7 +1,7 @@
 # glowing-sniffle
 
 ## What?
-A bash script that will automatically find local repos in the `home` directory and run `git pull` from them.
+A bash script that will automatically find local repos in the current directory and run `git pull` from them.
 
 ## Why?
 I wanted to do something bigger with that, but I abandoned it, since I already found a tool for that.
