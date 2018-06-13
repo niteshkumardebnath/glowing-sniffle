@@ -3,10 +3,10 @@ while getopts ":f" opt; do #Trying to add a flag.
   case $opt in
       f)
 #Using find to get all directories with .git, all git directories have that.
-	find $HOME -type d -name '.git' -exec sh -c ' 
+	find $HOME -maxdepth 2 -type d -name '.git' -exec sh -c ' 
   for name; do
   dir=${name%/.git} #Removing the /.git from the results, it is kinda important.
-  echo "Updating repo in directory: ${dir}"
+  echo "Updating repo in directory: $PWD{$dir#.}"
      (git -C "$dir" pull)
   done
 ' _ {} +
